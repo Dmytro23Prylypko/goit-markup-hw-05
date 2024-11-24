@@ -505,11 +505,13 @@ img {
 }
 .footer-form-button {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   padding: 8px 24px;
   padding-right: 64px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -528,6 +530,7 @@ img {
   right: 24px;
   width: 24px;
   height: 24px;
+  margin-left: 16px;
   fill: #fff;
 }
 
