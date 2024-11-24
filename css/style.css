@@ -617,8 +617,10 @@ img {
   color: #8e8f99;
 }
 .modal-input-wrapper {
-  position: relative;
   margin-bottom: 8px;
+}
+.modal-ico-wrapper {
+  position: relative;
 }
 .modal-input-wrapper:last-of-type {
   margin-bottom: 24px;
