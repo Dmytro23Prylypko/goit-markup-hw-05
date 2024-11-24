@@ -544,11 +544,14 @@ img {
   padding-top: 80px;
   background-color: rgba(46, 47, 66, 0.4);
 
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
+  visibility: visible;
   opacity: 1;
   pointer-events: auto;
 }
@@ -585,8 +588,6 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-ico {
-  width: 8px;
-  height: 8px;
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -608,6 +609,7 @@ img {
   color: #2e2f42;
 }
 .modal-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
