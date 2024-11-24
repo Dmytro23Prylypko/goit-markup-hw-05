@@ -692,6 +692,9 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+.modal-agreement-label > span {
+  display: inline-flex;
+}
 .modal-custom-checkbox {
   margin-right: 8px;
   width: 16px;
